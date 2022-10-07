@@ -1,0 +1,325 @@
+
+/* Universal Selectors: match elements of any type */
+
+:root {
+    /* Color Palette */
+    --greenblack: #212F30;
+    --sagegreen:#6F7568;
+    --darksage: #28302B;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Element Selectors: select all elements with the specified element name*/
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight:625;
+    text-align: right;
+    color: var(--greenblack);
+}
+
+header {
+    padding: 8px;
+    padding-left: 0px;
+    background: var(--darksage);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside {
+    width: 10%;
+    margin: 30px;
+    position: relative;
+}
+
+/* Aside Selector: adds line between aside and article */
+aside::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 100%;
+    width: 2px;
+    background: var(--sagegreen); 
+} 
+
+article {
+    width: 80%;
+    margin: 30px;
+}
+
+nav {
+    margin: 7px;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+p {
+    margin: 7px;
+    color: var(--greenblack);
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Class Selectors */
+
+/* work images border */
+.portfolio {
+    position: relative;
+    width: 47%;
+    height: 100px;
+    border: 5px solid var(--sagegreen);
+    margin: 10px;
+}
+
+/* sizes first work image */
+div.mm {
+    height: 200px;
+    width: 100%;
+}
+
+/* flexbox around work images */
+.flexwork {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* cards for work images*/
+.cards {
+    margin: 3px;
+    padding: 3px;
+    border: 5px solid var(--sagegreen);
+    border-radius: 2px;
+    background-color: var(--sagegreen);
+    color: var(--darksage);
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+/* title caption styling */
+div.title {
+    padding-left: 3%;
+    margin-left: 0px;
+}
+
+/* headshot */
+.headshotf {
+    height: 50px;
+    width: 50px;
+    margin-right: 6px;
+}
+
+.circlefillimg {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    border-radius: 50%;
+}
+    
+/* images' parent element styling: this tells the image to fill it's parent element */
+.fillimg {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    
+}
+
+
+/* nav bar animation */
+.nav {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 15px 20px;
+    position: relative;
+    white-space: nowrap;
+    font-size:large;
+    margin: 4px;
+    font-weight: 500;
+}
+
+/* adds animated underline invis */
+.nav::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    transition: all 0.3s ease 0.2s;
+}
+  
+/* when hover opens underline */
+.nav:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+a.tnav {
+    color: var(--sagegreen);
+}
+
+a.tnav::after {
+    background: var(--sagegreen);
+}
+
+a.bnav {
+    color: var(--greenblack);
+    padding: 10px;
+}
+
+a.bnav::after {
+    background: var(--greenblack)
+}
+
+
+/* banner sizing */
+.banner {
+    height: 230px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    position: absolute;
+    padding: 5px;
+}
+
+/* positions text on banner */
+figtext.br {
+    bottom: 10px;
+    right: 2%;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+/* positions cards */
+figtext.top {
+    left: -5px;
+    top: 100px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+figtext.left {
+    top: 28px;
+}
+
+img.banner {
+    object-position: center;
+}
+
+/* opacity in work images*/
+div a img {
+    opacity: .8;
+    transition: .5s ease;
+}
+
+/* hover effect on work images */
+div a img:hover {
+    opacity: 1;
+}
+
+
+/* Media Selectors */
+
+@media screen and (max-width: 1035px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    div.title {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0px;
+        bottom: -20px;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 100%;
+        background: var(--greenblack);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .mediamar {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .portfolio {
+        width: 100%;
+        height: 200px;
+    }
+}

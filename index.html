@@ -1,147 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beth DeCarlo // Web Developer</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Beth De Carlo | Web Devoloper</title>
 </head>
-
 <body>
 
-    <!-- header section -->
-    <header id="top">
-        <h1>Beth DeCarlo</h1>
-
-
-        <!-- navigation section of header -->
-        <section>
-            <nav>
-                <ul>
-                  <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-info">Contact Info</a>
-                </li>
-                <li>
-                    <a href="INSERT LINK FOR RESUME HERE">Resume</a>
-                </li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-
-
-    <!--image under header with subtitle  -->
-    <div class="container">
-        <img src="https://via.placeholder.com/2000x150" alt="subtitleimage" style="width:100%;">
-        <div class="bottom-right">
-            <h2>Cool Subtitle Here!</h2>
-        </div>
-        </div>
-
-<!-- delete later
-
-        <img src="https://via.placeholder.com/2000x150" alt="placeholder1">
-    <div class="bottom-right">
-        <h2>Cool Subtitle Here!</h2>
+  <!-- logo, title, navigation bar -->
+  <header>
+    <div class="cards title">
+        <figure class="headshotf"><img class ="circlefillimg" src="./assets/images/beth_headshot.png" alt="headshot"></figure>
+        <h1>Beth De Carlo</h1>
     </div>
-    </img>
+    <nav>
+      <a class= "nav tnav" href="#aboutMe">About Me</a>
+      <a class= "nav tnav" href="#work">Work</a>
+      <a class= "nav tnav" href="#contactMe">Contact Me</a>
+      <a class= "nav tnav" href="#resume">Resume</a>
+    </nav>
+  </header>
+  
+  <!-- subtitle -->
+  <section class="mediamar">
+    <figure class="banner">
+        <img class="fillimg banner" src="./assets/images/placeholder2.jpeg" alt="plant banner">
+        <figtext class="cards subtitle br">Web Devoloper</figtext>
+    </figure>
+  </section>
 
--->
-
-
-    <!--about me sidebar and paragraphs-->
-    <section class="aboutme maincontent">
-        <div class="sidebar-aboutme">
-            <h2 id="about-me">About Me</h2>
-        </div>
-        <div class="content-aboutme">
-            <p>Lorem ipsum dolor sit amet. Vel neque beatae sit assumenda nihil eum iure aspernatur. Hic accusamus fuga qui animi ducimus aut quos enim est exercitationem aliquam ea mollitia maxime aut accusamus maiores eum quibusdam explicabo. Aut sint cupiditate aut facilis odit rem asperiores quod.</p>
-
-            <p>Sed autem veritatis et rerum dolore in unde consequatur qui animi suscipit id molestias sint ut doloribus sint. Sed recusandae reprehenderit et eligendi nisi nam aliquid galisum qui perferendis iure ad nihil voluptatum. Non eveniet consequuntur sed exercitationem enim ipsa inventore ut earum inventore eos blanditiis officia ea molestias sint.</p>
-        </div>
+  <main>
+    <!-- about me section -->
+    <section>
+        <aside id="aboutMe">
+            <h2>About Me</h2>
+        </aside>
+        <article>
+            <p>Hi, I'm Beth! 👋 I am a student web developer at the University of Central Florida. I will be graduating in December with a certificate in Full Stack Web Development. Check out my portfolio to see the projects I am working on! </p>   
+        
+            <p> I am a maker at heart, with a background in visual arts and theatrical design. I'm a graduate of the University of Central Florida with a Bachelor of Fine Arts degree. My background in the theatre has lead to refined collaborative skills when it comes to turning BIG ideas into SUCCESSFUL projects.</p>
+                
+            <p>I am also experienced educator, with a focus on exceptional student education. With an awareness that there are a multitude of different ways to think and learn, I have jumped into web development with desire to develop projects that will help make the world a little better for all of us.</p>
+        </article>
     </section>
 
-    <!--work sidebar and images-->
-
-    <!--QUESTION HOW DO I PUT TEXT IN THE BOTTOM LEFT OF EACH IMAGE-->
-    <!--QUESTION HOW DO I MAKE IMAGES LINKS-->
-
-    <section class="work  maincontent">
-        <div class="sidebar-work">
-            <h2 id="work">Work</h2>
-        </div>
-        <div class="content-work">
-
-            <div class="first-project-container">
-                <img class="workimages" src="https://via.placeholder.com/800x90" alt="first-project" style="width:100%;">
-                <div class="bottom-left">
-                    <h3>First Project</h3>
-                </div>
-                </div>
-
-            <div class="secondary-project-container-1">
-                <img class="workimages" src="https://via.placeholder.com/400x90" alt="first-project" style="width:100%;">
-                <div class="bottom-left">
-                    <h3>Second Project</h3>
-                </div>
-                </div>   
-            
-            <div class="secondary-project-container-2">
-                <img class="workimages" src="https://via.placeholder.com/400x90" alt="first-project" style="width:100%;">
-                <div class="bottom-left">
-                    <h3>Third Project</h3>
-                </div>
-                </div>  
-
-
-            <!--- Save this for now
-            <div class="first-project">
-                <img class="workimages" src="https://via.placeholder.com/900x150" alt="img2"></a>
-                <h3>Title of project</h3>
-            </div> 
-
-
-
-
-            <div class="secondary-project">
-                <img class="workimages" src="https://via.placeholder.com/400x150" alt="img2"></a>
-                <h3>Title of project</h3>
-            </div>
-
-
-            <div class="secondary-project">
-                <img class="workimages" src="https://via.placeholder.com/400x150" alt="img3"></a>
-                <h3>Title of project</h3>
-            </div>
-        </div> -->
+    <!-- portfolio section -->
+    <section>
+        <aside id="work">
+            <h2>Work</h2>
+        </aside>
+        <article class="flexwork">
+            <div class="portfolio mm"><a href="https://github.com/bethdecarlo"><img class="fillimg" src="./assets/images/placeholder5.jpeg" alt="plant placeholder5"></a><figtext class="cards subtitle top">Coding Quiz</figcaption></div>
+            <div class="portfolio"><a href="https://github.com/bethdecarlo/coding-quiz"><img class="fillimg" src="./assets/images/placeholder2.jpeg" alt="plant placeholder2"></a><figtext class="cards subtitle left">CSS Refactor</figcaption></div>
+            <div class="portfolio"><a href="https://github.com/bethdecarlo/prework-study-guide"><img class="fillimg" src="./assets/images/placeholder1.jpg" alt="placeholder1"></a><figtext class="cards subtitle left">Study Guide</figcaption></div>
+            <div class="portfolio"><a href=""><img class="fillimg" src="./assets/images/placeholder3.jpeg" alt="placeholder3"></a><figtext class="cards subtitle left">New Project Coming Soon!</figtext></div>
+            <div class="portfolio"><a href=""><img class="fillimg" src="./assets/images/placeholder4.jpeg" alt="placeholder4"></a><figtext class="cards subtitle left">New Project Coming Soon!</figtext></div>
+        </article>
     </section>
 
-    <!--contact info sidebar and links -->
-    <section class="contactinfo">
-        <div class="sidebar-contact">
-            <h2 id="contact-info">Contact Info</h2>
-        </div>
-        <div class="content-contact">
-            <a href="INSERT LINK HERE" target="blank">LinkedIn</a>
-            <a href="INSERT LINK HERE" target="blank">Github</a>
-            <a href="INSERT LINK HERE" target="blank">Twitter</a>
-            </div>
+    <!-- contact section -->
+    <section>
+        <aside id="contactMe">
+            <h2>Contact Me</h2>
+        </aside>
+        <article>
+            <nav>
+                <a class="nav bnav" href="tel: 5615159445">407.474.9676</a>
+                <a class="nav bnav" href="mailto: bethdecarlo@gmail.com">bethdecarlo@gmail.com</a>
+                <a class="nav bnav" href="https://github.com/bethdecarlo">GitHub</a>
+                <a class="nav bnav" href="https://twitter.com/Edec000">Twitter</a>
+                <a class="nav bnav" href="http://crueltyfreefamily.com/">Blog</a>
+            </nav>
+        </article>
     </section>
 
-    <!--footer section-->
-    <footer>
-        <p>
-            made with ♡ and CSS 2022
-        </p>
-    </footer>
+  </main>
 </body>
-
 </html>
