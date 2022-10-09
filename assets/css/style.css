@@ -2,7 +2,8 @@
 /* Universal Selectors: match elements of any type */
 
 :root {
-    /* Color Palette */
+    /* --greenblack: #212F30; */
+    /* Color Palette  */
     --greenblack: #212F30;
     --sagegreen:#6F7568;
     --darksage: #28302B;
@@ -18,7 +19,7 @@
 
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: white;
+    background-color: #212F30;
 }
 
 h1 {
@@ -31,19 +32,20 @@ h2 {
     font-size: 30px;
     font-weight:625;
     text-align: right;
-    color: var(--greenblack);
+    color: var(--sagegreen);
 }
 
 header {
-    padding: 8px;
-    padding-left: 0px;
-    background: var(--darksage);
+    /* padding: 2px;
+    padding-left: 0px; */
+    background: var(--greenblack);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 section {
+    color: var(--sagegreen);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,7 +86,7 @@ nav {
 
 p {
     margin: 7px;
-    color: var(--greenblack);
+    color: var(--sagegreen);
     font-size: large;
     font-weight: 400;
     line-height: 1.2;
@@ -119,9 +121,9 @@ div.mm {
 .cards {
     margin: 3px;
     padding: 3px;
-    border: 5px solid var(--sagegreen);
-    border-radius: 2px;
+    border: 5px; solid var(--sagegreen);
     background-color: var(--sagegreen);
+    opacity: 100%;
     color: var(--darksage);
     white-space: nowrap;
     display: flex;
@@ -136,8 +138,8 @@ div.title {
 
 /* headshot */
 .headshotf {
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     margin-right: 6px;
 }
 
@@ -147,7 +149,8 @@ div.title {
     width: 100%;
     height: 100%;
     object-position: top;
-    border-radius: 50%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
     
 /* images' parent element styling: this tells the image to fill it's parent element */
@@ -201,12 +204,12 @@ a.tnav::after {
 }
 
 a.bnav {
-    color: var(--greenblack);
+    color: var(--sagegreen);
     padding: 10px;
 }
 
 a.bnav::after {
-    background: var(--greenblack)
+    background: var(--sagegreen)
 }
 
 
@@ -215,7 +218,9 @@ a.bnav::after {
     height: 230px;
     width: 100%;
     position: relative;
-    margin-bottom: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 1px;
 }
 
 .subtitle {
@@ -246,11 +251,12 @@ figtext.left {
 
 img.banner {
     object-position: center;
+    opacity: 50%;
 }
 
 /* opacity in work images*/
 div a img {
-    opacity: .8;
+    opacity: 30%;
     transition: .5s ease;
 }
 
