@@ -137,12 +137,18 @@ div.title {
 }
 
 /* headshot */
-.headshotf {
-    height: 150px;
-    width: 150px;
+.headshot {
+    height: 300px;
+    width: 300px;
     margin-right: 6px;
+    margin-top: 20px;
 }
-
+.logo {
+    height: 275px;
+    width: 275px;
+    margin-right: 2px;
+    
+}
 .circlefillimg {
     object-fit: cover;
     overflow: hidden;
