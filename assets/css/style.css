@@ -1,5 +1,5 @@
 
-/* Universal Selectors: match elements of any type */
+/* Universal Selectors*/
 
 :root {
     /* --greenblack: #212F30; */
@@ -15,7 +15,7 @@
 }
 
 
-/* Element Selectors: select all elements with the specified element name*/
+/* Element Selectors*/
 
 body {
     font-family:'Courier New', Courier, monospace;
@@ -57,7 +57,7 @@ aside {
     position: relative;
 }
 
-/* Aside Selector: adds line between aside and article */
+/* adds line between aside and article */
 aside::after {
     content: "";
     position: absolute;
@@ -103,13 +103,13 @@ p {
     margin: 10px;
 }
 
-/* sizes first work image */
+/* sizes big work image */
 div.mm {
     height: 200px;
     width: 100%;
 }
 
-/* flexbox around work images */
+/* flexbox work images */
 .flexwork {
     display: flex;
     flex-direction: row;
@@ -117,7 +117,7 @@ div.mm {
     justify-content: space-between;
 }
 
-/* cards for work images*/
+/* cards work images*/
 .cards {
     margin: 3px;
     padding: 3px;
@@ -130,13 +130,13 @@ div.mm {
     flex-direction: row;
 }
 
-/* title caption styling */
+/* title caption */
 div.title {
     padding-left: 3%;
     margin-left: 0px;
 }
 
-/* headshot */
+/* headshot and logo*/
 .headshot {
     height: 300px;
     width: 300px;
@@ -146,7 +146,7 @@ div.title {
 .logo {
     height: 275px;
     width: 275px;
-    margin-right: 2px;
+    margin-right: 3px;
     
 }
 .circlefillimg {
@@ -182,7 +182,7 @@ div.title {
     font-weight: 500;
 }
 
-/* adds animated underline invis */
+/* adds animated underline*/
 .nav::after { 
     content: "";
     position: absolute;
